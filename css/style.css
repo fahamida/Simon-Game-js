@@ -1,0 +1,283 @@
+body {
+  background-image: url("https://images.pexels.com/photos/139306/pexels-photo-139306.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  font-family:'Archivo Black';
+  text-align:center;
+  font-size: 70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.circle {
+  margin: 33px;
+  border:20px solid black;
+  background-color:black;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  padding:30px;
+  overflow: hidden;
+  position: relative;
+}
+
+#innerCircle {
+  margin:60px;
+  background-color: white;
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  border: 10px solid black;
+}
+
+#gameName {
+  font-family:'Archivo Black';
+  font-weight: bold;
+  color: black;
+  font-size:40px; 
+  position: relative;
+}
+
+sup{
+  font-size:20px;   
+}
+#scoreBoard {
+  font-family:'Digital-7 Mono', arial;
+  font-weight: bold;
+  font-size: 24px;
+  height: 40px;
+  width: 65px;
+  border: 3px solid #333333;
+  border-radius: 10px;
+  color: red;
+  background-color: rgb(67,7,16);
+  margin-top: 18px;
+  margin-left: 10px;
+  margin-right: 20px;
+  position: absolute;
+}
+
+#startBtn {
+  
+  padding-left: 5px;
+  height: 30px;
+  width: 30px;
+  min-height: 20px;
+  border: 5px solid #333333;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 24px;
+  margin-left: 100px;
+  vertical-align: middle;
+  position: absolute;
+  
+ }
+
+#strictBtn {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  min-height: 20px;
+  border: 5px solid #333333;
+  background-color: yellow;
+  border-radius: 50%;
+  display: block;
+  margin-top: 20px;
+    border-radius: 50%;
+  margin-left: 160px;
+  margin-top: 24px;
+
+  
+}
+
+#controls {
+  position: relative;
+  height: 70px;
+  width:220px;
+/*   border-style:solid; */
+  display: inline-block;
+
+}
+
+
+#controlNames{
+  margin-top: 0px;
+  font-family:'Archivo Black';
+  font-weight: bold; 
+  position: relative;
+  height: 20px;
+  width:220px;
+/*   border-style:solid; */
+  display: inline-block;
+  font-size:15px;
+ 
+}
+
+#count{
+  position: absolute;
+  margin-top: 0%;
+  padding-top: 0%;
+  border-top: 0px;
+  margin-left: 20px;
+  color: black;
+}
+
+#start{
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 90px;
+  color: black;
+  text-align: center;
+}
+
+#strict{
+  position: absolute;
+  margin-left: 160px;
+  color: black;
+}
+
+.quad1 {
+  position: absolute;
+  background-color:red;
+  width: 50%;
+  height: 45%;
+  left: 55%;
+  right: 0%;
+  bottom: 50%;
+  top: 0%; 
+  cursor: pointer;
+}
+
+.quad2 {
+  position: absolute;
+  background-color: green;
+  width: 45%;
+  height: 45%;
+  left: 0%;
+  right:45%;
+  bottom: 50%;
+  top: 0%;
+  cursor: pointer;
+}
+
+.quad3 {
+  position: absolute;
+  background-color: yellow;
+  width: 45%;
+  height: 50%;
+  left: 0;
+  right:50%;
+  bottom: 0%;
+  top: 55%;
+  /*#cca707*/
+  cursor: pointer;
+}
+
+.quad4 {
+  position: absolute;
+  background-color: blue;
+  width: 50%;
+  height: 50%;
+  left:55%;
+  right: 0%;
+  bottom: 0%;
+  top: 55%;
+  cursor: pointer;
+}
+
+.active {
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-left: 7px;
+  padding-right: 2px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  background-color: red;
+}
+
+#onOff {
+  position: relative;
+  padding-top:15px;
+  display: inline-block;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+   border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(50px);
+}
+
+.slider:after
+{
+ content:'OFF';
+ color: black;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 10px;
+ font-family: Verdana, sans-serif;
+}
+
+input:checked + .slider:after
+{  
+  content:'ON';
+}
+
+.navbar{
+  margin-bottom:0px;
+
+}

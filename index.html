@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SG-Final</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+
+<div class="container">
+  <div class="title text-center">
+    <h1> The Simon Game </h1>
+  </div>
+  <div class="row">
+    <div class="col-md-3 test"></div>
+    <div class="col-md-6 text-center circle">
+      <div id="gameButtons">
+        <div class="tile quad1" id="red" onclick="red()">
+        </div>
+        <div class="tile quad2" id="green" onclick="green()">
+        </div>
+        <div class="tile quad3" id="yellow" onclick="yellow()">
+        </div>
+        <div class="tile quad4" id="blue" onclick="blue()">
+        </div>
+      </div>
+      <!--   Inner circle     -->
+      <div class="text-center" id="innerCircle">
+       
+          <div id="name">
+            <span id="gameName">Simon<sup>&#174;</sup></span>
+          </div>
+        
+        
+          <div id="controls">
+            <div id="scoreBoard">
+            </div>
+            <div id="startBtn">
+            </div>
+            <div id="strictBtn"></div>
+          </div>
+
+       
+        
+          <div id="controlNames">
+            <div id="count">Count</div>
+            <div id="start">Start</div>
+            <div id="strict">Strict</div>
+            
+          </div>
+
+          <div id="onOff">
+            <label class="switch"><input type="checkbox" id="togBtn" onclick="onOff(this)"><div class="slider round" ></div></label>
+          </div>
+        </div>
+        <!--       Inner Circle End -->
+      </div>
+
+ 
+    </div>
+  </div>
+
+  <!--footer-->
+
+  <nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+      <li><a href="http://www.fahamida.com" target="_blank"> Fahamida's Portfolio</a>
+      </li>
+      <li><a href="https://www.linkedin.com/in/fahamida-haque/" target="_blank">LinkedIn</a></li>
+      <li> <a href="https://www.freecodecamp.com" target="_blank">Free Code Camp</a></li>
+      <li><a href="http://www.fahamida.com" target="_blank">Fahamida Haque &copy; 2017. All Rights Reserved</a></li>
+
+    </ul>
+  </nav>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
